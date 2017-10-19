@@ -525,7 +525,7 @@ $icon-list:
     &:after{
       width: $icon-container-size;
       height: $icon-container-size;
-      display:inline-block;
+      display: block;
       content:'';
 
       background-size: 80%;
