@@ -1,7 +1,7 @@
 // CONFIGURATION
 $icon-container-size: 110px; // the size of the icons
 $icon-edge-color: ""; // the default edge color of the icon
-$font-size: 38; // the font size of the text incapsulated inside the svg icon relative to the 200px height of the original svg 
+$font-size: 38; // the font size of the text incapsulated inside the svg icon relative to the 200px height of the original svg
 
 
 // ATTENTION write hex in extended notation
@@ -9,7 +9,7 @@ $shape-color: #F1F2F2; // the color of the shape inside the icon (if any)
 $shape-color-positive: #666666;  // the color of the shape when the icon have a positive background (es. white)
 $dark-color: #3a3b3c; // background color of the icons in the dark theme (or the ribbon color in the "double" $style theme  )
 $icon-shadow: ""; // or "drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );" without quotes
-$font-color: $shape-color; // default 
+$font-color: $shape-color; // default
 
 // CHOOSE YOUR THEME
 //
@@ -518,9 +518,9 @@ $icon-list:
       content:'';
       font-family: 'Material Icons';
       font-size: $icon-container-size / 4.2;
-      opacity: 0.8;    
+      opacity: 0.8;
     }
-    
+
 
     &:after{
       width: $icon-container-size;
@@ -534,21 +534,21 @@ $icon-list:
       @include do-icon();
     }
   }
-  
+
   &.light {
     .ico:before{ color: $shape-color-positive !important;}
-    .ico:after { filter: drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );}  
+    .ico:after { filter: drop-shadow( 0 2px 2px rgba(0, 0, 0, 0.25) );}
   }
-  
+
   &.dark {
     .ico:before{ color: #F1F2F2 !important;}
     .ico:after { filter: inherit;}
   }
-  
+
   &.double {
-    .ico:after { filter: drop-shadow( 0 1px 1px rgba(0, 0, 0, 0.25) );} 
+    .ico:after { filter: drop-shadow( 0 1px 1px rgba(0, 0, 0, 0.25) );}
   }
-  
+
   i.material-icons {
     position: absolute;
     top: 33%;
