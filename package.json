@@ -4,12 +4,13 @@
   "main": "mime-icon-generator",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erikyo/mime-icon-generator"
+    "url": "https://github.com/UniSharp/mime-icon-generator"
   },
   "author": {
-    "name": "Codekraft Studio - info@codekraft.it"
+    "name": "UniSharp Ltd.",
+    "email": "unisharp-service@unisharp.com"
   },
-  "homepage": "https://github.com/erikyo/mime-icon-generator",
+  "homepage": "https://github.com/UniSharp/mime-icon-generator",
   "license": "MIT",
   "style": "./mime-icons.css",
   "devDependencies": {
