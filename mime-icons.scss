@@ -501,38 +501,31 @@ $icon-list:
 .mime-icon {
   margin: 0;
   display: inline-block;
-  vertical-align:top;
   position: relative;
+  width: 100%;
+  padding-bottom: 100%;
 
-  .ico {
-    position:relative;
+  &:before{
+    position: absolute;
     text-align: center;
+    top: calc(45% - 1.5rem);
+    width: 100%;
+    z-index: 9;
+    font-family: 'Material Icons';
+    font-size: 3rem;
+    opacity: 0.8;
+  }
 
-    &:before{
-      position: absolute;
-      top: $icon-container-size / 2.7;
-      display:block;
-      width:100%;
-      overflow: visible;
-      z-index:9;
-      content:'';
-      font-family: 'Material Icons';
-      font-size: $icon-container-size / 4.2;
-      opacity: 0.8;
-    }
+  &:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
 
-
-    &:after{
-      width: $icon-container-size;
-      height: $icon-container-size;
-      display: block;
-      content:'';
-
-      background-size: 80%;
-      background-position: center;
-      background-repeat: no-repeat;
-      @include do-icon();
-    }
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include do-icon();
   }
 
   &.light {

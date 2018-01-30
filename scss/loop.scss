@@ -6,40 +6,40 @@ $actual-icon-color: 1;
 
 
 @each $filetype, $icon-primary-color, $icon in $icon-list {
-  
+
  @if (type-of($icon-primary-color) != 'color' and ($icon-primary-color) ) {  // if background isn't a color or is null
-    
+
     @if ($style == "dark") {
       $icon-edge-color: nth($icon-colours, $actual-icon-color);   // the color is a color from the $icon-colours array
       $icon-primary-color: $dark-color;
 
     } @else if ($style == "light") {
-      $icon-edge-color: nth($icon-colours, $actual-icon-color); 
+      $icon-edge-color: nth($icon-colours, $actual-icon-color);
       $icon-primary-color: #F1F2F2;
 
     } @else if ($style == "double") {
       $icon-primary-color: $dark-color;
       $icon-edge-color: nth($icon-colours, $actual-icon-color);
-      
+
     } @else {
-      $icon-primary-color: nth($icon-colours, $actual-icon-color); 
+      $icon-primary-color: nth($icon-colours, $actual-icon-color);
       $icon-edge-color: "";
     }
-  
-  @if ($actual-icon-color < $colors-number  ) { // Prepare the next color then increase the index counter 
-   $actual-icon-color: $actual-icon-color + 1; 
+
+  @if ($actual-icon-color < $colors-number  ) { // Prepare the next color then increase the index counter
+   $actual-icon-color: $actual-icon-color + 1;
   } @else {
    $actual-icon-color: 1;
   }
 
  } @else {  // else  background is a color or isn't null
- 
+
     @if ($style == "dark") {
       $icon-edge-color: $icon-primary-color;
       $icon-primary-color: $dark-color;
-  
+
     } @else if ($style == "light") {
-      $icon-edge-color: $icon-primary-color; 
+      $icon-edge-color: $icon-primary-color;
       $icon-primary-color: #F1F2F2;
 
     } @else if ($style == "double") {
@@ -47,9 +47,9 @@ $actual-icon-color: 1;
       $icon-primary-color: $dark-color;
 
     } @else {
-      $icon-primary-color: $icon-primary-color; 
+      $icon-primary-color: $icon-primary-color;
       $icon-edge-color: "";
-    } 
+    }
   }
 
   @if ($style == "light") {
@@ -62,16 +62,16 @@ $actual-icon-color: 1;
     $font-color:  $shape-color;
     $icon-shadow: inherit;
   }
-  
+
 
   // APPLY STYLE
-  .mime-icon.ico-#{$filetype} .ico:before {
-    content:$icon;
+  .mime-icon.ico-#{$filetype}:before {
+    content: $icon;
     color: $font-color;
   }
-  .mime-icon.ico-#{$filetype} .ico:after {
+  .mime-icon.ico-#{$filetype}:after {
     @include do-icon($icon-primary-color, $icon-edge-color, str-slice(to-upper-case($filetype), 0, 5), $font-color, $icon );
     filter: #{$icon-shadow};
   }
-  
+
 }

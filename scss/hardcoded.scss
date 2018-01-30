@@ -23,7 +23,7 @@
 		&.ico-html .ico:after { @include do-icon(#f1f2f2,desaturate(#3F51B5, 15%), "HTML", #888, "" );}
 		&.ico-js .ico:after { @include do-icon(#f1f2f2,desaturate(#9C27B0, 15%), "JS", #888, "" );}
 	}
-	
+
 	&.dark {
 		&.ico-csv .ico:after { @include do-icon($dark-color, desaturate(#05ad9d, 15%), "CSV", #ddd, "" );}
 		&.ico-txt .ico:after { @include do-icon($dark-color,desaturate(#8BC34A, 15%), "TXT", #ddd, "" );}
@@ -36,38 +36,37 @@
 	}
 
 	&.double {
-    
-		&.ico-avi .ico{
-      &:before { color: #F44336 !important;}
-      &:after { @include do-icon($dark-color, #F44336, "AVI",  #F44336, "");}
-    }
+		&.ico-avi .ico {
+          &:before { color: #F44336 !important;}
+          &:after { @include do-icon($dark-color, #F44336, "AVI",  #F44336, "");}
+        }
 		&.ico-mp4 .ico {
-      &:before { color: #8BC34A !important;}
-      &:after { @include do-icon($dark-color, #8BC34A, "MP4",  #8BC34A, "");}
-    }
+          &:before { color: #8BC34A !important;}
+          &:after { @include do-icon($dark-color, #8BC34A, "MP4",  #8BC34A, "");}
+        }
 		&.ico-mkv .ico {
-      &:before { color: #bdcc2b !important;}
-      &:after { @include do-icon($dark-color, #bdcc2b, "MKV",  #bdcc2b, "");}
-    }
+          &:before { color: #bdcc2b !important;}
+          &:after { @include do-icon($dark-color, #bdcc2b, "MKV",  #bdcc2b, "");}
+        }
 		&.ico-mpeg .ico {
-      &:before { color: #FFC107 !important;}
-      &:after{ @include do-icon($dark-color, #FFC107, "MPEG", #FFC107, "");}
-    }
+          &:before { color: #FFC107 !important;}
+          &:after{ @include do-icon($dark-color, #FFC107, "MPEG", #FFC107, "");}
+        }
 		&.ico-mov .ico {
-      &:before { color: #05ad9d !important;}
-      &:after { @include do-icon($dark-color, #05ad9d, "MOV",  #05ad9d, "");}
-    }
+          &:before { color: #05ad9d !important;}
+          &:after { @include do-icon($dark-color, #05ad9d, "MOV",  #05ad9d, "");}
+        }
 		&.ico-flv .ico {
-      &:before { color: #E91E63 !important;}
-      &:after { @include do-icon($dark-color, #E91E63, "FLV",  #E91E63, "");}
-    }
+          &:before { color: #E91E63 !important;}
+          &:after { @include do-icon($dark-color, #E91E63, "FLV",  #E91E63, "");}
+        }
 		&.ico-swf .ico {
-      &:before { color: #9C27B0 !important;}
-      &:after { @include do-icon($dark-color, #9C27B0, "SWF",  #9C27B0, "");}
-    }
+          &:before { color: #9C27B0 !important;}
+          &:after { @include do-icon($dark-color, #9C27B0, "SWF",  #9C27B0, "");}
+        }
 		&.ico-wmv .ico {
-      &:before { color: #8BC34A !important;}
-      &:after { @include do-icon($dark-color, #8BC34A, "WMV",  #8BC34A, "");}
-    }
+          &:before { color: #8BC34A !important;}
+          &:after { @include do-icon($dark-color, #8BC34A, "WMV",  #8BC34A, "");}
+        }
 	}
 }
