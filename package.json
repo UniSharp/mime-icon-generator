@@ -7,9 +7,15 @@
     "url": "https://github.com/UniSharp/mime-icon-generator"
   },
   "author": {
-    "name": "UniSharp Ltd.",
-    "email": "unisharp-service@unisharp.com"
+    "name": "Codekraft Studio - info@codekraft.it"
   },
+  "contributors": [
+    {
+      "name": "UniSharp Ltd.",
+      "email": "opensource@unisharp.com",
+      "url": "https://www.unisharp.com"
+    }
+  ],
   "homepage": "https://github.com/UniSharp/mime-icon-generator",
   "license": "MIT",
   "style": "./mime-icons.css",
