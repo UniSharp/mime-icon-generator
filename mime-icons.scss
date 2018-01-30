@@ -499,8 +499,6 @@ $icon-list:
 //////
 
 .mime-icon {
-  margin: 0;
-  display: inline-block;
   position: relative;
   width: 100%;
   padding-bottom: 100%;
@@ -510,7 +508,7 @@ $icon-list:
     text-align: center;
     top: calc(45% - 1.5rem);
     width: 100%;
-    z-index: 9;
+    z-index: 1;
     font-family: 'Material Icons';
     font-size: 3rem;
     opacity: 0.8;

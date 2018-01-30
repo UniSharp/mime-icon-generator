@@ -138,8 +138,6 @@
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="icon-model" viewBox="0 0 200 200"> <path d="M171 192.4V58.2l-58.4 0V0H36.5C32.4 0 29 3.4 29 7.6h0v184.9h0c0 4.2 3.4 7.6 7.6 7.6h126.9C167.6 200 171 196.6 171 192.4z" fill="#3a3b3c"/><text class="icon-text" transform="translate(100 171)" width="120" height="50" font-family="Myriad Pro, Myriad, Tahoma-Bold, Helvetica, Arial, sans-serif" font-size="38" style="fill:#8BC34A;font-weight:bold;text-anchor:middle;text-shadow:0">WMV</text><polygon points="112.6 0 171 58.3 112.6 58.3" fill="#8BC34A"/><polygon points="170.9 116.5 112.6 58.3 170.9 58.3" style="fill:#010202;opacity:0.1"/></svg>'); }
 
 .mime-icon {
-  margin: 0;
-  display: inline-block;
   position: relative;
   width: 100%;
   padding-bottom: 100%; }
@@ -148,7 +146,7 @@
     text-align: center;
     top: calc(45% - 1.5rem);
     width: 100%;
-    z-index: 9;
+    z-index: 1;
     font-family: 'Material Icons';
     font-size: 3rem;
     opacity: 0.8; }
